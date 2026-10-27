@@ -14,25 +14,25 @@ export function NavigateHover() {
   const date = new Date();
 
   const formatter = new Intl.DateTimeFormat("en-GB", {
-    weekday: "short", 
-    day: "2-digit", 
-    month: "short", 
+    weekday: "short",
+    day: "2-digit",
+    month: "short",
     year: "numeric",
   });
-  const formattedDate = formatter.format(date.getDate());
+  const formattedDate = formatter.format(date);
   return (
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-mist-900 text-[15px]">{formattedDate}</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="text-mist-900 text-[15px]">
+            {formattedDate}
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="w-96">
-              <ListItem href="/" title="Home">
-              </ListItem>
-              <ListItem href="/settings" title="Profile">                
-              </ListItem>
-              <ListItem href="/newsLetter" title="News Letter">                
-              </ListItem>
+              <ListItem href="/" title="Home"></ListItem>
+              <ListItem href="/settings" title="Profile"></ListItem>
+              <ListItem href="/newsLetter" title="News Letter"></ListItem>
+              <ListItem href="/pricing" title="Pricing"></ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>

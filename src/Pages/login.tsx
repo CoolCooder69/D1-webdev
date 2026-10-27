@@ -22,7 +22,7 @@ const Login = () => {
     setError(false);
     try {
       const res = await fireBase?.loginInWIthMailAndPassword({ ...form });
-      navigate("/"); 
+      navigate("/signup"); 
     } catch (e) {
       console.log(e);
       setError(true);
@@ -38,7 +38,7 @@ const Login = () => {
 
   return (
     <>
-      <div className="w-dvw h-100 flex justify-center items-center">
+      <div className="w-dvw h-100 flex justify-center items-center my-50">
         <div className="w-100 h-full rounded-2xl border-2 flex flex-col justify-start items-center p-10 gap-5">
           <div>
             <LogIn></LogIn>

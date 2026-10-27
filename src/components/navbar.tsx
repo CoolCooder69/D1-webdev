@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const Navbar = () => {
   const { user, loading } = useAuth();
-  const [loggedIn, setLogedIn] = useState(false);
+  const [loggedIn, setLogedIn] = useState();
 
   return (
     <>

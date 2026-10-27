@@ -9,6 +9,8 @@ import Signup from "./Pages/signupPage";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import Logout from "./Pages/Logout";
+import Post from "./Pages/post";
+import Pricing from "./Pages/pricing";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/logout" element={<Logout />} />
+        <Route path="/post" element={<Post />} />
+        <Route path="/pricing" element={<Pricing />} />
       </Routes>
       <Footer></Footer>
     </>

@@ -17,7 +17,7 @@ const NewsLetter = () => {
   const [statusColor, setStatusColor] = useState<string>("text-gray-500");
   const [otpColor, setOtpColor] = useState<string>("");
 
-  const handleEmailSubmit = async (e: FormEvent<HTMLFormElement>) => {
+  const handleEmailSubmit = async (e: any) => {
     e.preventDefault();
 
     setServerStatus("Loading...");
@@ -50,7 +50,7 @@ const NewsLetter = () => {
     setTimeout(() => setOtpColor(""), 3000);
   };
 
-  const handleOtpSubmit = async (e: MouseEvent<SVGSVGElement>) => {
+  const handleOtpSubmit = async (e: MouseEvent) => {
     e.preventDefault();
 
     try {
@@ -75,7 +75,7 @@ const NewsLetter = () => {
   return (
     <div className="min-h-screen w-screen">
       {/* Newsletter */}
-      <div className="flex justify-center items-center">
+      <div className="flex min-h-screen justify-center items-center ">
         {/* Email form */}
         <div className="flex h-fit border rounded-xl shadow-2xl p-20">
           <form
